@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+
+}
+body{
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+header{
+    position: absolute;
+    width: 100vw;
+}
+.container {
+    margin: 0 auto;
+    width: 90%; 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.logo h1 {
+    font-size: 30px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin-left: 23px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 16px;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaef5e;
+}
+.icon i {
+    font-size: 20px;
+    transform: rotate(-45deg);
+}
+
+.other-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.other-icon .icon-1 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ececec;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #737373;
+    font-size: 17px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.nav-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.btn-1 {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 15px;
+    background-color: #aaef5e;
+    border-radius: 25px;
+    border: none;
+    align-items: center;
+}
+.btn-1 P {
+    font-size: 17px ;
+    font-weight: 700;
+}
+.changing-icon-1{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: white;
+}
+.changing-icon-1 i {
+    transform: rotate(-45deg);
+    font-size: 15px;
+}
+/* nav end */
+/* main */
+/* hero section */
+
+.hero {
+    height: 100dvh;
+    background-color: #fdfdfd;
+    text-align: center;
+}
+/* hero top */
+.hero-top img{
+    margin-top: 12dvh;
+    width: 45%;
+    height: auto;
+}
+
+/* hero bottom */
+.hero-bottom {
+    margin-top: 10px;
+}
+.hero-bottom h1 {
+    font-size: 35px;
+    color: #202020;
+    font-weight: bold;
+}
+
+.hero-bottom p {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #484848;
+}
+/* btn-2 */
+.btn-2 {
+    gap: 10px;
+    padding: 8px 15px;
+    background-color: #d4f7ae;
+    border-radius: 25px;
+    border: none;
+    align-items: center;
+    font-size: 20px ;
+    font-weight: 700;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+.changing-icon-2{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aaef5e;
+}
+.changing-icon-2 i {
+    transform: rotate(-45deg);
+    font-size: 15px;
+}
+
+/* hero-end */
+/* Medium screen styles */
+@media (max-width: 768px) {
+    .container-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 73vw;
+    }
+    .Residence-content {
+      width: 100%;
+    }
+    .Residence-content h2 {
+      font-size: 44px;
+    }
+    .Residence-content > p {
+      font-size: 18px;
+    }
+    .side-img {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .side-img img {
+      object-fit: cover;
+      width: 100%;
+    }
+  
+    .process-heading h1 {
+      font-size: 28px;
+    }
+  
+    .process-content {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .portfolio-heading h1 {
+      font-size: 28px;
+    }
+  
+    .p-container {
+      width: 100%;
+    }
+  
+    .top,
+    .bottom {
+      flex-direction: column;
+    }
+  
+    .card-1,
+    .card-2image {
+      width: 100%;
+    }
+  
+    .articles-heading h1 {
+      font-size: 28px;
+    }
+  
+    .article-box {
+      grid-template-columns: 1fr;
+    }
+  
+    .box {
+      width: 100%;
+    }
+  
+    .form-container {
+      padding: 1rem;
+    }
+  
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  
+    input,
+    textarea {
+      height: 4rem;
+    }
+  }

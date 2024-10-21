@@ -1,0 +1,120 @@
+.Residence {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-2 {
+    margin: 0 auto;
+}
+.Residence-content {
+    display: flex;
+    flex-direction: column;
+}
+.background-img{
+    position: absolute;
+    width: 100px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+.background-img img {
+    max-width: 100%;
+    height: auto;
+}
+.Residence-content button {
+    align-self: flex-start;
+    margin: 20px 0;
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.Residence-content h2 {
+    font-size: 36px;
+    color: #202020;
+    margin-bottom: 15px;
+}
+.Residence-content > p {
+    font-size: 16px;
+    color: #484848;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+.info-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.commercial, .residential {
+    display: flex;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    align-items: center;
+}
+.commercial-img img, .residential-img img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+.commercial-content h3, .residential-content h3 {
+    font-size: 18px;
+    color: #484848;
+    margin-bottom: 5px;
+}
+.commercial-content p, .residential-content p {
+    font-size: 14px;
+    color: #737373;
+    line-height: 22px;
+}
+.side-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container-2 {
+        display: flex;
+        gap: 30px;
+        max-width: 73vw;
+    }
+    .Residence-content {
+        width: 50%;
+    }
+    .Residence-content h2 {
+        font-size: 44px;
+    }
+    .Residence-content > p {
+        font-size: 18px;
+    }
+    .side-img {
+        width: 50%;
+        margin-top: 0;
+    }
+    .side-img img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Residence-content h2 {
+        font-size: 35px;
+        font-weight: 900;
+    }
+    .Residence-content > p {
+        font-size: 15px;
+    }
+    .commercial-img img, .residential-img img {
+        width: 50px;
+    }
+}
